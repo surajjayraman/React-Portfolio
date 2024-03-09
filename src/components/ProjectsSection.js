@@ -5,16 +5,17 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "React Space",
+    title: "Dream",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
-    getImageSrc: () => require("../images/photo1.jpg"),
+      "Full stack vacation home rental app in React, with redux integration via express middleware️",
+    getImageSrc: () => require("../images/photo2.jpg"),
+    demo: "https://dream-one-nu.vercel.app/",
   },
   {
-    title: "React Infinite Scroll",
+    title: "Artify",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
-    getImageSrc: () => require("../images/photo2.jpg"),
+      "MERN Full Stack Next.js 14 Art Marketplace with Stripe, Next Auth, React, MongoDB, Sass",
+    getImageSrc: () => require("../images/photo1.jpg"),
   },
   {
     title: "Photo Gallery",
@@ -53,6 +54,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
+            demo={project.demo}
           />
         ))}
       </Box>

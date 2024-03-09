@@ -14,7 +14,7 @@ const Footer = () => {
           maxWidth="1024px"
           height={16}
         >
-          <p>Suraj © 2023</p>
+          <p>Suraj © 2024</p>
         </Flex>
       </footer>
     </Box>
