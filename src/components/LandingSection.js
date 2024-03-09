@@ -4,7 +4,7 @@ import FullScreenSection from "./FullScreenSection";
 
 const greeting = "Hello, I am Suraj!";
 const bio1 = "A Full-Stack Web Developer";
-const bio2 = "specialised in building React Storefronts.";
+const bio2 = "specialised in React";
 
 // Implement the UI for the LandingSection component according to the instructions.
 // Use a combination of Avatar, Heading and VStack components.
@@ -18,22 +18,12 @@ const LandingSection = () => (
     {/* The UI for the landing section */}
     <VStack spacing={16}>
       <VStack spacing={4}>
-        <Avatar
-          src="https://gravatar.com/avatar/f5c256dbc551a0a7cedc390407e97443?s=400&d=robohash&r=x"
-          size="2xl"
-          name="Suraj"
-        />
-        <Heading as="h4" size="md" noOfLines={1}>
-          {greeting}
-        </Heading>
+        <Avatar src="https://gravatar.com/avatar/f5c256dbc551a0a7cedc390407e97443?s=400&d=robohash&r=x" size="2xl" name="Suraj" />
+        <Heading as="h4" size="md" noOfLines={1}>{greeting}</Heading>
       </VStack>
       <VStack spacing={6}>
-        <Heading as="h1" size="4xl" noOfLines={1}>
-          {bio1}
-        </Heading>
-        <Heading as="h1" size="4xl" noOfLines={1}>
-          {bio2}
-        </Heading>
+        <Heading as="h1" size="4xl" noOfLines={1}>{bio1}</Heading>
+        <Heading as="h1" size="4xl" noOfLines={1}>{bio2}</Heading>
       </VStack>
     </VStack>
     {/* The UI for the landing section */}
