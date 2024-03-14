@@ -15,7 +15,8 @@ const projects = [
     title: "Artify",
     description:
       "MERN Full Stack Next.js 14 Art Marketplace with Stripe, Next Auth, React, MongoDB, Sass",
-    getImageSrc: () => require("../images/photo1.jpg"),
+    getImageSrc: () => require("../images/banner.png"),
+    demo: "https://artify-mu.vercel.app/",
   },
   {
     title: "Photo Gallery",
