@@ -5,6 +5,18 @@ import Card from "./Card";
 
 const projects = [
   {
+    title: "Borcelle Store",
+    description: "Full stack integrated E-Commerce Storefront",
+    getImageSrc: () => require("../images/trending.png"),
+    demo: "https://borcella-ecommerce-store-mauve.vercel.app/",
+  },
+  {
+    title: "Borcelle Admin",
+    description: "Full stack integrated Storefront Admin Dashboard",
+    getImageSrc: () => require("../images/new_arrivals.png"),
+    demo: "https://borcella-admin-dashboard-six.vercel.app/sign-in",
+  },
+  {
     title: "Dream",
     description:
       "Full stack vacation home rental app in React, with redux integration via express middleware️",
