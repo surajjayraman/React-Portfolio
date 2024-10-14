@@ -18,7 +18,7 @@ const LandingSection = () => (
     {/* The UI for the landing section */}
     <VStack spacing={16}>
       <VStack spacing={4}>
-        <Avatar src="Suraj_Profile.png" size="2xl" name="Suraj" />
+        <Avatar src="MyLinkedInProfile.jpg" size="2xl" name="Suraj" />
         <Heading as="h4" size="md" noOfLines={1}>
           {greeting}
         </Heading>

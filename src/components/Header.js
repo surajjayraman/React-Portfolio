@@ -48,14 +48,12 @@ const Header = () => {
       const currScrollPos = window.scrollY;
       const currHeaderElement = headerRef.current;
 
-      if (!currHeaderElement)
-        return;
-    
+      if (!currHeaderElement) return;
+
       if (prevScrollPos > currScrollPos)
         currHeaderElement.style.transform = "translateY(0)";
-      else
-        currHeaderElement.style.transform = "translateY(-200px)";
-      
+      else currHeaderElement.style.transform = "translateY(-200px)";
+
       prevScrollPos = currScrollPos;
     };
 
@@ -91,9 +89,15 @@ const Header = () => {
           <nav>
             {/* Add social media links based on the `socials` data */}
             <HStack spacing={10}>
-              {socials.map(({icon, url}) => (
-                <a key={url} href={url} icon={icon} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon key={url} icon={icon} size="2x"/>
+              {socials.map(({ icon, url }) => (
+                <a
+                  key={url}
+                  href={url}
+                  icon={icon}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon key={url} icon={icon} size="2x" />
                 </a>
               ))}
             </HStack>
@@ -102,8 +106,12 @@ const Header = () => {
           <nav>
             <HStack spacing={8}>
               {/* Add links to Projects and Contact me section */}
-              <a href="#projects" onClick={handleClick("projects")}>Projects</a>
-              <a href="#contact" onClick={handleClick("contactme")}>Contact Me</a>
+              <a href="#projects" onClick={handleClick("projects")}>
+                Projects
+              </a>
+              <a href="#contact" onClick={handleClick("contactme")}>
+                Contact Me
+              </a>
               {/* Add links to Projects and Contact me section */}
             </HStack>
           </nav>
